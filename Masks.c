@@ -13,17 +13,17 @@
 
 int main(void){
 
-char c_value[4] = "ECE";
+char inptxt[4] = "ECE";
 
 int block1, block2, block3;
 
-    block1 = (int) c_value[0];
-    block2 = (int) c_value[1];
-    block3 = (int) c_value[2];
+    block1 = (int) inptxt[0];
+    block2 = (int) inptxt[1];
+    block3 = (int) inptxt[2];
 
- char   checker =  c_value[3];
- char   checker1 =  c_value[2];
- char   checker2 =  c_value[1];
+ char   checker =  inptxt[3];
+ char   checker1 =  inptxt[2];
+ char   checker2 =  inptxt[1];
 //for the case when three characters can be checked
 
 if(checker1 != NULL && checker2 != NULL) {

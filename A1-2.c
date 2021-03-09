@@ -19,7 +19,7 @@ int main(void ) {
 
     printf("Enter the amount won:");
     scanf("%double", &winnings);
-    printf("WOOHOO! you won %d dollar(s)!\n", winnings);//Should be a million. but wasn't sure if input was needed
+    printf("WOOHOO! you won %d dollar(s)!\n", winnings);//Should be a million. but wasn't sure if inptxt was needed
     printf("So how long will it last?\n");
 
     printf("Press ENTER key to Continue\n");
