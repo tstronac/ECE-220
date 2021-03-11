@@ -1,4 +1,3 @@
-/*tstronac 1581380*/
 
 /*-----------------DO NOT MODIFY--------*/
 .global TestAsmCall
@@ -42,27 +41,16 @@ add r6,r4,r5
 ldr r4, [r1]
 ldr r5, [r1, #4]
 
-//Determine if Delta X is 1, 2, 4, using branch, doesnt seem to work though, overflow
-
+//multiply ∆X with ∆Y
 sub r5,r4
 MUL r6,r5
 
-
-/*
-cmp r5,#2
-BEQ deltaX
-BGT delta2X
-deltaX:
-lsl r5,r6,#1
-
-delta2X:
-lsl r5,r6,#2
-*/
 //a running sum of the area
 ldr r7,[r2]
 add r7,r6
 str r7,[r2]
 
+//adjust counter
 sub r3,#1
 cmp r3,#0
 BEQ End
