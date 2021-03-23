@@ -12,7 +12,7 @@
 #define base64 64
 
 
-int main(void){
+int main2(void){
     FILE *file_id, *file_id2, *file_id3;
     char inptxt[6];
     char base64_key[base64];

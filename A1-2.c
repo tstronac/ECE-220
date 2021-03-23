@@ -35,7 +35,7 @@ int main(void ) {
             winnings -= 96091;
             winnings *= pow(interest_month, 12);
             year++;
-            printf("the sum at the end of year %i is  %d \n", year, winnings);
+            printf("the sumarr at the end of year %i is  %d \n", year, winnings);
         }
 
 /*If they cant make the relative payment at the beginning of the year then they cant at month 6,
